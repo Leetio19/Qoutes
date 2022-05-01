@@ -57,6 +57,9 @@ body{
 /* padding-top: 5px; */
 
 }
+.alert {
+  display:none;
+  }
 
 @media(max-width:1280px){
   .container{width: 95%;}
@@ -89,14 +92,26 @@ body{
 }
 
 @media(orientation:portrait){
-  .inner-quotes-container{width: 85%;min-height: 450px;}
+   /* .inner-quotes-container{width: 85%;min-height: 450px;}
   .quotes-container{ height: 100vh;}
-  .inner-quotes-container p{font-size: 1.2rem;}
+  .inner-quotes-container p{font-size: 1.2rem;}*/
 body{
     background: radial-gradient(ellipse at center, #ffffff, #634e4e);
 
     background-size: cover;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat ; 
     
+  } 
+
+  .alert {
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    }
+  .quotes-container{
+    display: none;
   }
 }
