@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 body{
-  background: #06BDC1;
-  background: -webkit-radial-gradient(center, #06BDC1, #68469F);
-  background: -moz-radial-gradient(center, #06BDC1, #68469F);
-  background: radial-gradient(ellipse at center, #06BDC1, #68469F);
+  background: radial-gradient(ellipse at center, #003435, #1c0c37);
+  background-image:  url(pngwing.com.png) ;
+  background-size: cover;
+  background-repeat: no-repeat ;
+  
 }
 
 .container{
   width: 1280px;
   margin: auto;
 }
+.mobile{
 
+}
 .quotes-container{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
+  position: relative;
+  top: 110px;
 }
 
 .inner-quotes-container{
@@ -27,18 +32,19 @@ body{
   flex-direction: column;
   width: 900px;
   text-align: center;
-  min-height: 400px;
+  min-height: 300px;
   padding: 0 25px;
   color: gray;
   border-radius: 10px;
-  background-color: #F4EDEA;
-  border: 10px solid #06BDC1;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9); 
+  /* background-color: #F4EDEA; */
+  /* border: 10px solid #06BDC1; */
+  /* box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9);  */
 }
 
 .inner-quotes-container p{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
+  font-family: 'Dancing Script', cursive;
 }
 
 .inner-quotes-container h3{
@@ -47,17 +53,50 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 
-.quote-btn{padding-top: 25px;}
+.quote-btn{
+/* padding-top: 5px; */
+
+}
 
 @media(max-width:1280px){
   .container{width: 95%;}
+  .inner-quotes-container{width: 65%;min-height: 75px;}
+  .quotes-container{ height: 50vh;top: 150px;}
+  .inner-quotes-container p{font-size: 1.2rem;}
+}
+@media(max-width:900px) {
+  .inner-quotes-container{width: 45%;min-height: 150px;}
+  .quotes-container{ height: 65vh;}
+  .inner-quotes-container p{font-size: 1.2rem;}
+}
+@media(max-width:768px) {
+  .inner-quotes-container{width: 100%;min-height: 1px;}
+  .quotes-container{ height: 65vh;}
+  .inner-quotes-container p{font-size: 1.2rem;}
+}
+@media(max-width:700px) {
+  .inner-quotes-container{width: 85%;min-height: 1px;}
+  .quotes-container{ height: 45vh;}
+  .inner-quotes-container p{font-size: 1.2rem;}
 }
 
-@media(max-width:900px){
-  .inner-quotes-container{width: 100%;}
-}
+
+
 
 @media(max-width:480px){
   .inner-quotes-container p{font-size: 1.2rem;}
   .inner-quotes-container h3{font-size: 1.5rem;}
+}
+
+@media(orientation:portrait){
+  .inner-quotes-container{width: 85%;min-height: 450px;}
+  .quotes-container{ height: 100vh;}
+  .inner-quotes-container p{font-size: 1.2rem;}
+body{
+    background: radial-gradient(ellipse at center, #ffffff, #634e4e);
+
+    background-size: cover;
+    background-repeat: no-repeat ;
+    
+  }
 }
