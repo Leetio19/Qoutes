@@ -104,6 +104,7 @@ body{
   } 
 
   .alert {
+    font-size: 14px;
     height: 100vh;
     display:flex;
     align-items: center;
