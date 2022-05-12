@@ -34,9 +34,6 @@ a{
   text-decoration: none !important;
   color: #000;
 }
-.mobile{
-
-}
 .quotes-container{
   display: flex;
   align-items: center;
@@ -73,11 +70,6 @@ a{
   font-size: 2rem;
   color: black;
   font-family: 'Dancing Script', cursive;
-}
-
-.quote-btn{
-/* padding-top: 5px; */
-
 }
 .alert {
   display:none;
@@ -146,4 +138,3 @@ body{
   .alert h1{
     font-size: 35px;
   }
-}
