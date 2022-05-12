@@ -12,6 +12,28 @@ body{
   width: 1280px;
   margin: auto;
 }
+nav{
+  background-color: #ffffff77;
+  
+}
+ul{
+  display: flex;
+  justify-content: center;
+}
+li{
+  margin: 0 auto;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vh;
+  background-color: rgba(255, 255, 255, 0.741);
+  
+  border: 3px solid rgb(17, 96, 73);
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+a{
+  text-decoration: none !important;
+  color: #000;
+}
 .mobile{
 
 }
@@ -63,24 +85,28 @@ body{
 
 @media(max-width:1280px){
   .container{width: 95%;}
-  .inner-quotes-container{width: 65%;min-height: 75px;}
+  .inner-quotes-container{width: 65%;min-height: 20vh;}
   .quotes-container{ height: 50vh;top: 150px;}
   .inner-quotes-container p{font-size: 1.2rem;}
 }
+@media(max-width:1000px) {
+  .inner-quotes-container{width: 75%;min-height: 30vh;}
+  .quotes-container{ height: 14vh;}
+  .inner-quotes-container p{font-size: 1.2rem;}
 @media(max-width:900px) {
-  .inner-quotes-container{width: 45%;min-height: 150px;}
-  .quotes-container{ height: 65vh;}
+  .inner-quotes-container{width: 75%;min-height: 30vh;}
+  .quotes-container{ height: 15vh;}
   .inner-quotes-container p{font-size: 1.2rem;}
 }
 @media(max-width:768px) {
-  .inner-quotes-container{width: 100%;min-height: 1px;}
-  .quotes-container{ height: 65vh;}
+  .inner-quotes-container{width: 90%;min-height: 17vh;}
+  .quotes-container{ height: 15vh;}
   .inner-quotes-container p{font-size: 1.2rem;}
 }
 @media(max-width:700px) {
-  .inner-quotes-container{width: 85%;min-height: 1px;}
-  .quotes-container{ height: 45vh;}
-  .inner-quotes-container p{font-size: 1.2rem;}
+  .inner-quotes-container{width: 75%;min-height: 22vh;}
+  .quotes-container{ height: 1vh;}
+  .inner-quotes-container p{font-size: 1rem;}
 }
 
 
