@@ -138,3 +138,6 @@ body{
   .alert h1{
     font-size: 35px;
   }
+  nav{
+    display: none;}
+}  
